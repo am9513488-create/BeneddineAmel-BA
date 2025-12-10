@@ -22,7 +22,7 @@ data = {
     "pourcentage GC":[50,66.67,58.33,40,45.45,60,50]
 }
 
-#création d'un dataframe (tableau pandas)
+#1)création d'un dataframe (tableau pandas)
 
 df = pd.DataFrame(data)
 
@@ -34,15 +34,18 @@ print("tableau des longueur ADN :")
 
 print(df)
 
+
 #opérations sur les tableaux:
 
-print("***********operations***********")
+print("***********longueur***********")
 
 #2) sélectionner la colonne "longueur"
 
 longueur = df["longueur]
 
 print(longueur)
+
+
 
 #3)Filtrer les séquences dant la longueur est supérieur a 10 
 
@@ -54,6 +57,8 @@ filtered_df=df [df["longueur"] >10 ]
 
 print(filtered_df,"\n\n")
 
+
+
 #4)Calculer la moyenne du pourcentage de GC avec 3 chiffres après la virgule
 
 print("************Calcul de la moyenne************")
@@ -64,6 +69,9 @@ average_gc=df["pourcentage GC"].mean()
 
 print(f"pourcentage moyen de GC :{average_gc:.3f}%","\n\n")
 
+
+
+
 #5)Ajouter une nouvelle colonne
 
 print("****************Ajout d'une nouvelle colonne****************")
@@ -73,6 +81,8 @@ print("****************Ajout d'une nouvelle colonne****************")
 df["catégorie GC"]=df["pourcentage GC"].apply(lambda x:"Riche"if x>55 else ("Moyen"if x>=45 else"Faible"))
 
 print(df)
+
+
 
 #7)calculer l'écart-type de GC% et de la langeur
 
@@ -89,6 +99,13 @@ print(f"Écart-type de %GC : {ecart_type_GC:.2f}")
 
 
 print(f"Écart-type de la langueur : {ecart_type_longueur:.2f}")
+
+
+
+#8)souvegarde le dataframe dans un fichier CSV 
+
+#df.to_csv("tableau_sequence.csv",index=false)
+
 
 
 

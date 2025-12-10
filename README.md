@@ -107,6 +107,7 @@ print("****************Ajout d'une nouvelle colonne****************")
 df["catégorie GC"]=df["pourcentage GC"].apply(lambda x:"Riche"if x>55 else ("Moyen"if x>=45 else"Faible"))
 
 print(df)
+
 #7)calculer l'écart-type de GC% et de la langeur
 printf("\n************* Écart-types *************")
 ecart_type_GC = df["pourcentage GC"].std()

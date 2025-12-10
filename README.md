@@ -98,7 +98,7 @@ ecart_type_longeur = df["longueur"].std()
 print(f"Écart-type de %GC : {ecart_type_GC:.2f}")
 
 
-print(f"Écart-type de la langueur : {"ecart_type_longueur:.2f"}")
+print(f"Écart-type de la longueur : {ecart_type_longueur:.2f}\n")
 
 
 

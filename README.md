@@ -46,6 +46,47 @@ longueur = df["longueur]
 
 print(longueur)
 
+#2) Affichage avec une bibliothèque de visualisation (matplotlib)
+
+#import matplotlib.pyplot as plt
+
+# données
+
+#sequences = ["ATGCGTACGTA","GCTAGCTAGGCC","ATGCGCGTAAGT","TACGATCGTA","ATGAAAGGCTTA","CGTACGTAGC","TTAACCGGAT"]
+
+#longueur= [11,12,12,10,11,10,10]
+
+#gc_content=[50,66.67,58.33,40,45.45,60,50]
+
+# création d'un DataFram
+
+#data={"séquence": sequences, "Longueur": longueur, "Pourcentage GC":gc_content}
+
+#df= pd.DataFram(data)
+
+#Affichage du tableau de données sous forme de graphique
+
+#plt.figure(figsize=(10,6))
+
+#plt.bar(df["séquence"], df["pourcentage GC"], color='skyblue')
+
+#plt.xlabel("séquences")
+
+#plt.ylabel("Pourcentage GC")
+
+#plt.title("Pourcentage de GC par séquence")
+
+#plt.show()
+
+#3)Filtrer les séquences dant la longueur est supérieur a 10 
+
+print("*************** Filtrer Longueur > 10 ****************")
+
+#Filtrer les séquences dant la longueur est supérieur a 10
+
+filtered_df=df [df["longueur"] >10 ]
+
+print(filtered_df,"\n\n")
 
 
 

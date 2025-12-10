@@ -80,7 +80,7 @@ print(longueur)
 
 #3)Filtrer les séquences dant la longueur est supérieur a 10 
 
-print("***************Filtrer Longueur > 10****************")
+print("***************Filtrer Longueur > 10***************")
 
 #Filtrer les séquences dant la longueur est supérieur a 10
 
@@ -90,7 +90,7 @@ print(filtered_df,"\n\n")
 
 #4)Calculer la moyenne du pourcentage de GC avec 3 chiffres après la virgule
 
-print("************Calcul de la moyenne*************")
+print("************Calcul de la moyenne************")
 
 #Calculer la moyenne du pourcentage de GC avec 3 chiffres après la virgule
 
@@ -100,7 +100,7 @@ print(f"pourcentage moyen de GC :{average_gc:.3f}%","\n\n")
 
 #5)Ajouter une nouvelle colonne
 
-print("****************Ajout d'une nouvelle colonne*******************")
+print("****************Ajout d'une nouvelle colonne****************")
 
 #Ajouter une nouvelle colonne "catégorie_gc"
 

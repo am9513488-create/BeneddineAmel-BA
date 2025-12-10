@@ -92,7 +92,7 @@ print("\n************* Écart-types *************")
 ecart_type_GC = df["pourcentage GC"].std()
 
 
-ecart_type_longeur = df["longueur"].std()
+ecart_type_longueur = df["longueur"].std()
 
 
 print(f"Écart-type de %GC : {ecart_type_GC:.2f}")

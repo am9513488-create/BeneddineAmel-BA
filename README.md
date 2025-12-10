@@ -50,7 +50,7 @@ print(longueur)
 
 #import matplotlib.pyplot as plt
 
-# données
+#données
 
 #sequences = ["ATGCGTACGTA","GCTAGCTAGGCC","ATGCGCGTAAGT","TACGATCGTA","ATGAAAGGCTTA","CGTACGTAGC","TTAACCGGAT"]
 
@@ -58,7 +58,7 @@ print(longueur)
 
 #gc_content=[50,66.67,58.33,40,45.45,60,50]
 
-# création d'un DataFram
+#création d'un DataFram
 
 #data={"séquence": sequences, "Longueur": longueur, "Pourcentage GC":gc_content}
 
@@ -80,7 +80,7 @@ print(longueur)
 
 #3)Filtrer les séquences dant la longueur est supérieur a 10 
 
-print("*************** Filtrer Longueur > 10 ****************")
+print("***************Filtrer Longueur > 10****************")
 
 #Filtrer les séquences dant la longueur est supérieur a 10
 
@@ -88,6 +88,25 @@ filtered_df=df [df["longueur"] >10 ]
 
 print(filtered_df,"\n\n")
 
+#4)Calculer la moyenne du pourcentage de GC avec 3 chiffres après la virgule
+
+print("************Calcul de la moyenne*************")
+
+#Calculer la moyenne du pourcentage de GC avec 3 chiffres après la virgule
+
+average_gc=df["pourcentage GC"].mean()
+
+print(f"pourcentage moyen de GC :{average_gc:.3f}%","\n\n")
+
+#5)Ajouter une nouvelle colonne
+
+print("****************Ajout d'une nouvelle colonne*******************")
+
+#Ajouter une nouvelle colonne "catégorie_gc"
+
+df["catégorie GC"]=df["pourcentage GC"].apply(lambda x:"Riche"if x>55 else ("Moyen"if x>=45 else"Faible"))
+
+print(df)
 
 
 

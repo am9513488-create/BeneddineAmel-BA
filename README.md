@@ -11,7 +11,7 @@
                  
                  #bendada ilyas abderrezzak)
                  
-import pandas as pd
+#1)import pandas as pd
 
 #données : séquence ADN, longeur, pourcentage de GC
 
@@ -40,43 +40,11 @@ print(df)
 
 print("***********operations***********")
 
-#1) sélectionner la colonne "longueur"
+#2) sélectionner la colonne "longueur"
 
 longueur = df["longueur]
 
 print(longueur)
-
-#2) Affichage avec une bibliothèque de visualisation (matplotlib)
-
-#import matplotlib.pyplot as plt
-
-#données
-
-#sequences = ["ATGCGTACGTA","GCTAGCTAGGCC","ATGCGCGTAAGT","TACGATCGTA","ATGAAAGGCTTA","CGTACGTAGC","TTAACCGGAT"]
-
-#longueur= [11,12,12,10,11,10,10]
-
-#gc_content=[50,66.67,58.33,40,45.45,60,50]
-
-#création d'un DataFram
-
-#data={"séquence": sequences, "Longueur": longueur, "Pourcentage GC":gc_content}
-
-#df= pd.DataFram(data)
-
-#Affichage du tableau de données sous forme de graphique
-
-#plt.figure(figsize=(10,6))
-
-#plt.bar(df["séquence"], df["pourcentage GC"], color='skyblue')
-
-#plt.xlabel("séquences")
-
-#plt.ylabel("Pourcentage GC")
-
-#plt.title("Pourcentage de GC par séquence")
-
-#plt.show()
 
 #3)Filtrer les séquences dant la longueur est supérieur a 10 
 
@@ -109,10 +77,14 @@ df["catégorie GC"]=df["pourcentage GC"].apply(lambda x:"Riche"if x>55 else ("Mo
 print(df)
 
 #7)calculer l'écart-type de GC% et de la langeur
+
 printf("\n************* Écart-types *************")
 ecart_type_GC = df["pourcentage GC"].std()
+
 ecart_type_longeur = df["longueur"].std()
+
 print(f"Écart-type de %GC : {ecart_type_GC:.2f}")
+
 print(f"Écart-type de la langueur : {ecart_type_longueur:.2f}")
 
 

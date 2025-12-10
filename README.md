@@ -1,15 +1,13 @@
 # BeneddineAmel-BA
-#beneddine amel biochimie appliqué 07/12/2025
+#Beneddine Amel biochimie appliqué 07/12/2025
 
-#membre de groupe(
+#membres de groupe(
 
-                 #benali samia
-                 
-                 #meghelli hichem
-                 
-                 #meghelli souheil
-                 
-                 #bendada ilyas abderrezzak)
+                 #Beneddine Amel
+                 #Benali Samia
+                 #Meghelli Hichem
+                 #Meghelli Souheil
+                 #Bendada ilyas Abderrezzak)
                  
 #1)import pandas as pd
 

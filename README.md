@@ -114,7 +114,8 @@ print(f"Écart-type de la longueur : {ecart_type_longueur:.2f}\n")
 
 #8)souvegarde le dataframe dans un fichier CSV 
 
-#df.to_csv("tableau_sequence.csv",index=false)
+df.to_csv("tableau_sequences.csv", index=False) 
+
 
 
 

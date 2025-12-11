@@ -9,7 +9,7 @@
                  #Meghelli Souheil
                  #Bendada ilyas Abderrezzak)
                  
-#1)import pandas as pd
+import pandas as pd
 
 #données : séquence ADN, longeur, pourcentage de GC
 

@@ -41,7 +41,7 @@ print("***********longueur***********")
 
 #2) sélectionner la colonne "longueur"
 
-longueur = df["longueur]
+longueur = df["longueur"]
 
 print(longueur)
 

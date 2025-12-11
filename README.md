@@ -88,7 +88,7 @@ print(df)
 
 df["Nb_G"] = df["séquence"].apply(lambda seq: seq.count("G")) 
 
-print("\n************
+print("\n************Nombre de G dans chaque séquences **************\n") 
 
 
 #7)calculer l'écart-type de GC% et de la langeur

@@ -35,11 +35,11 @@ print("tableau des longueur ADN :")
 print(df)
 
 
-#opérations sur les tableaux:
+# 2)opérations sur les tableaux:
 
 print("***********longueur***********")
 
-# 2) sélectionner la colonne "longueur"
+#sélectionner la colonne "longueur"
 
 longueur = df["longueur"]
 

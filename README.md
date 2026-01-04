@@ -116,7 +116,7 @@ print(f"Écart-type de la longueur : {ecart_type_longueur:.2f}\n")
 
 df.to_csv("tableau_sequences.csv", index=False) 
 
-print("csv_loaded")
+print("csv_loaded") .
 
 
 
